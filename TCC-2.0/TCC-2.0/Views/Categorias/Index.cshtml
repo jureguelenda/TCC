@@ -1,0 +1,73 @@
+﻿@model IEnumerable<TCC_2._0.Models.CATEGORIA>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<body class="fundo">
+
+    <p><a class="btn btn-info" href="/Categorias/Criar">Criar nova Categoria &raquo;</a></p>
+    <div >
+
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Descrição</th>
+
+                </tr>
+            </thead>
+            <tbody class="teste">
+                @foreach (var item in Model)
+                {
+
+                    <tr>
+                        <th scope="row">@item.CATID</th>
+                        <td>@item.CATDESCRICAO</td>
+
+
+
+
+
+
+                        <td class="butoes">
+
+                            <a href="/categorias/editar?id=@item.CATID"><button type="button" class="btn btn-warning">Editar</button></a>
+                            <a href="/categorias/deletar?id=@item.CATID"><button type="button" class="btn btn-danger">Deletar</button></a>
+
+                        </td>
+                    </tr>
+                }
+
+
+
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <p><a href="/home/projetos" class="btn btn-primary">Voltar &raquo;</a></p>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
