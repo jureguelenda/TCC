@@ -32,16 +32,20 @@ namespace TCC_2._0.Controllers
         }
 
         [HttpPost]
-       /* public ActionResult Criar(string descricao, int categoria, HttpPostedFileBase imagem)
+        public ActionResult Criar(string descricao, int categoria, HttpPostedFileBase imagem)
         {
             PRODUTO novoproduto = new PRODUTO();
 
             novoproduto.PRODESCRICAO = descricao;
             novoproduto.CATID = categoria;
-            using (var memoryStream = new MemoryStream())
+            
+            if (Imagem != null)
             {
-                imagem.InputStream.CopyTo(memoryStream);
-                novoproduto.PROIMAGEM = memoryStream.ToArray();
+                using (var memoryStream = new MemoryStream())
+                {
+                    await Imagem.CopyToAsync(memoryStream);
+                    novoproduto.PROIMAGEM = memoryStream.ToArray();
+                }
             }
 
             bd.PRODUTO.Add(novoproduto);
@@ -49,7 +53,7 @@ namespace TCC_2._0.Controllers
 
             return RedirectToAction("Index");
         }
-        */
+        
 
 
 
