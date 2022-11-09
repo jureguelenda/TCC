@@ -28,7 +28,7 @@ namespace TCC_2._0.Controllers
             ViewBag.listaProduto = bd.PRODUTO.ToList();
             return View();
         }
-        /*
+        
         [HttpPost]
         public ActionResult Criar(int produto, int tipo, string maximo, string minimo, string estoque, HttpPostedFileBase imagem)
         {
@@ -39,10 +39,14 @@ namespace TCC_2._0.Controllers
             novoproduto.PTMAXIMO = Convert.ToInt32(maximo);
             novoproduto.PTMINIMO = Convert.ToInt32(minimo);
             novoproduto.PTESTOQUE = Convert.ToInt32(estoque);
-            using (var memoryStream = new MemoryStream())
+            
+            if (imagem != null)
             {
-                imagem.InputStream.CopyTo(memoryStream);
-                novoproduto.PTIMAGEM = memoryStream.ToArray();
+                using (var memoryStream = new MemoryStream())
+                {
+                     await Imagem.CopyToAsync(memoryStream);
+                     novoproduto.PTIMAGEM = memoryStream.ToArray();
+                }
             }
 
             bd.PROTIPO.Add(novoproduto);
@@ -50,7 +54,7 @@ namespace TCC_2._0.Controllers
 
             return RedirectToAction("Index");
         }
-        */
+        
 
 
         [HttpGet]
