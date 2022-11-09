@@ -32,18 +32,18 @@ namespace TCC_2._0.Controllers
         }
 
         [HttpPost]
-        public ActionResult Criar(string descricao, int categoria, HttpPostedFileBase imagem)
+        public async Task<ActionResult> Criar(string descricao, int categoria, IFormFile imagem)
         {
             PRODUTO novoproduto = new PRODUTO();
 
             novoproduto.PRODESCRICAO = descricao;
             novoproduto.CATID = categoria;
             
-            if (Imagem != null)
+            if (imagem != null)
             {
                 using (var memoryStream = new MemoryStream())
                 {
-                    await Imagem.CopyToAsync(memoryStream);
+                    await imagem.CopyToAsync(memoryStream);
                     novoproduto.PROIMAGEM = memoryStream.ToArray();
                 }
             }

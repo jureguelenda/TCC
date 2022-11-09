@@ -15,12 +15,15 @@ namespace TCC_2._0.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index() 
+            =>  View();
+
+        public IActionResult Privacy()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Opcoes()
         {
             return View();
         }

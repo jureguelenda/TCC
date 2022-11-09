@@ -1,4 +1,4 @@
-@model IEnumerable <TCC_2._0.Models.PRODUTO >
+@model IEnumerable<TCC_2._0.Models.PRODUTO>
 
 
 @{
@@ -26,7 +26,7 @@
                 <tr>
                     <td scope="row">@item.PROID</td>
                     <td>@item.PRODESCRICAO</td>
-                    <td> @item.CATEGORIA.CATDESCRICAO</td>
+                    <td> @item.CATID</td>
                     <td>
                         @{
                             if (item.PROIMAGEM != null)

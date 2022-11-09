@@ -9973,11 +9973,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\android\\Desktop\\david\\TCC-2.0\\TCC-2.0\\TCC-2.0.csproj",
+      "projectUniqueName": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\TCC-2.0.csproj",
       "projectName": "TCC-2.0",
-      "projectPath": "C:\\Users\\android\\Desktop\\david\\TCC-2.0\\TCC-2.0\\TCC-2.0.csproj",
+      "projectPath": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\TCC-2.0.csproj",
       "packagesPath": "C:\\Users\\android\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\android\\Desktop\\david\\TCC-2.0\\TCC-2.0\\obj\\",
+      "outputPath": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -30,7 +30,7 @@ namespace TCC_2._0.Controllers
         }
         
         [HttpPost]
-        public ActionResult Criar(int produto, int tipo, string maximo, string minimo, string estoque, HttpPostedFileBase imagem)
+        public async Task<ActionResult> CriarAsync(int produto, int tipo, string maximo, string minimo, string estoque, IFormFile imagem)
         {
             PROTIPO novoproduto = new PROTIPO();
 
@@ -44,7 +44,7 @@ namespace TCC_2._0.Controllers
             {
                 using (var memoryStream = new MemoryStream())
                 {
-                     await Imagem.CopyToAsync(memoryStream);
+                     await imagem.CopyToAsync(memoryStream);
                      novoproduto.PTIMAGEM = memoryStream.ToArray();
                 }
             }
