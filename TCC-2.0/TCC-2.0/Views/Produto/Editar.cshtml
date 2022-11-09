@@ -1,5 +1,55 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+@model  TCC_2._0.Models.PRODUTO
+
+
 @{
+    ViewBag.Title = "Editar";
 }
+
+<h2>Editando</h2>
+
+<div>
+    <form action="/Produto/Editar?id=@Model.PROID" method="post">
+        <div>
+            <class ="form-group">
+                <label for="descricao">Descrição</label>
+                <input type="text" class="form-control"
+                       maxlength="100" id="descricao" name="descricao"
+                       value="@Model.PRODESCRICAO"
+                       required />
+        </div>
+
+      
+
+        <div>
+            <label for="categoria">Categoria: </label>
+            <select type="text" class="form-control" id="categoria" name="categoria">
+
+                @foreach (var item in ViewBag.listaCategoria)
+                {
+                    <option value="@item.CATID">@item.CATDESCRICAO</option>
+                }
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+            <label for="arquivo">Imagem</label>
+            <input type="file" class="form-control"
+                   id="imagem" name="imagem" re />
+        </div>
+
+        <div>
+
+
+
+            <div>
+                <button type="submit" class="btn btn-success">Salvar</button>
+                <a href="/produto/index" class="btn btn-primary">Voltar</a>
+
+            </div>
+
+
+        </div>
+    </form>
+</div>
