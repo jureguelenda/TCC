@@ -25,7 +25,17 @@ namespace TCC_2._0.Controllers
 
         public IActionResult Projetos()
         {
-            return View();
+
+            if (Session["MyCurso"] != null)
+            {
+                return View();
+
+            }
+            else
+            {
+                return RedirectToAction("Login", "Home");
+            }
+            
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
