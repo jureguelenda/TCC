@@ -1,0 +1,62 @@
+﻿@model IEnumerable<TCC_2._0.Models.ENTRADA>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<div>
+    <p><a class="btn btn-info" href="/Entrada/Criar">Criar nova Entrada &raquo;</a></p>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Origem</th>
+                <th scope="col">Observação</th>
+                <th scope="col">Data</th>
+            </tr>
+        </thead>    
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <td scope="row">@item.ENTID</td>
+                    <td>@item.ENTORIGEM</td>
+                    <td> @item.ENTOBSERVACAO</td>
+                    <td> @item.ENTDATA</td>
+
+
+
+
+
+
+                    <td>
+
+                        <a href="/entrada/editar?id=@item.ENTID"><button type="button" class="btn btn-warning">Editar</button></a>
+                        <a href="/entrada/deletar?id=@item.ENTID"><button type="button" class="btn btn-danger">Deletar</button></a>
+
+                    </td>
+                </tr>
+            }
+
+
+
+
+        </tbody>
+    </table>
+
+
+</div>
+
+
+
+
+
+
+
+
+<p><a href="/home/projetos" class="btn btn-primary">Voltar &raquo;</a></p>

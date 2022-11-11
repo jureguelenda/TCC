@@ -1,0 +1,39 @@
+﻿@model TCC_2._0.Models.ENTRADA
+
+@{
+    ViewBag.Title = "Deletar";
+}
+
+<h2>Deletando</h2>
+
+<div>
+    <form action="/Entrada/ConfirmeDelete?id=@Model.ENTID" method="post">
+        <div>
+            <class ="form-group">
+                <label>Origem</label>
+                <label>@Model.ENTORIGEM</label>
+        </div>
+        <div>
+            <class ="form-group">
+                <label>Observação</label>
+                <label>@Model.ENTOBSERVACAO</label>
+        </div>
+
+        <div>
+            <class ="form-group">
+                <label>Data Entrada</label>
+                <label>@Model.ENTDATA</label>
+        </div>
+
+
+        <br />
+
+        <div>
+            <p><a href="/entrada/index" class="btn btn-primary">Voltar &raquo;</a></p>
+            <button type="submit" class="btn btn-danger">Deletar</button>
+        </div>
+
+
+
+    </form>
+</div>

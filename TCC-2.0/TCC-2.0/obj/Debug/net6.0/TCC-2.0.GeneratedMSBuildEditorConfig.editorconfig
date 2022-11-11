@@ -191,16 +191,64 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/Entrada/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYVxDcmlhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/Entrada/Deletar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYVxEZWxldGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/Entrada/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYVxFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/Entrada/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW50cmFkYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/Home/Opcoes.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcGNvZXMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/Home/Projetos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9qZXRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensEntrada/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNFbnRyYWRhXENyaWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensEntrada/Deletar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNFbnRyYWRhXERlbGV0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensEntrada/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNFbnRyYWRhXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensEntrada/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNFbnRyYWRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensSaida/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNTYWlkYVxDcmlhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensSaida/Deletar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNTYWlkYVxEZWxldGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensSaida/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNTYWlkYVxFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensSaida/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNTYWlkYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/Produto/Criar.cshtml]

@@ -1,5 +1,37 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<TCC_2._0.Models.ENTRADA>
+
 @{
+    ViewBag.Title = "Criar";
 }
+
+<h2>Criar</h2>
+
+<div>
+    <form action="/Saida/Criar" enctype="multipart/form-data" method="post">
+
+   
+
+        <div class="form-group">
+            <label for="data">Data Saida</label>
+            <input type="datetime" class="form-control"
+                   maxlength="100" id="data" name="data"
+                   required />
+        </div>
+
+
+
+
+
+
+
+
+        <div>
+            <button type="submit" class="btn btn-success">Salvar</button>
+            <a href="/saida/index" class="btn btn-primary">Voltar</a>
+
+        </div>
+
+
+
+    </form>
+</div>

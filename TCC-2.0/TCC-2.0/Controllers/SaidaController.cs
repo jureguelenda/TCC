@@ -18,6 +18,15 @@ namespace TCC_2._0.Controllers
 
         public ActionResult Index()
         {
+           /*  (new SAIDA
+            {
+                = User.Identity.Name,
+                detalhes = "Entrou na tela de Saida"
+            });
+
+            bd.SaveChanges();
+           */
+
             // select * from produto
             return View(bd.TIPO.ToList());
         }

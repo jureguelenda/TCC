@@ -23,7 +23,7 @@ namespace TCC_2._0.Controllers
             return View();
         }
 
-        public IActionResult Opcoes()
+        public IActionResult Projetos()
         {
             return View();
         }

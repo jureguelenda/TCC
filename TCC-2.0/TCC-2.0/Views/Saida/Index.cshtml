@@ -1,5 +1,58 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<TCC_2._0.Models.SAIDA>
+
+
 @{
+    ViewBag.Title = "Index";
 }
+
+
+
+<div>
+    <p><a class="btn btn-info" href="/Saida/Criar">Criar nova Saida &raquo;</a></p>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <td scope="row">@item.SAIID</td>
+                    <td> @item.SAIDATA</td>
+
+
+
+
+
+
+                    <td>
+
+                        <a href="/saida/editar?id=@item.SAIID"><button type="button" class="btn btn-warning">Editar</button></a>
+                        <a href="/saida/deletar?id=@item.SAIID"><button type="button" class="btn btn-danger">Deletar</button></a>
+
+                    </td>
+                </tr>
+            }
+
+
+
+
+        </tbody>
+    </table>
+
+
+</div>
+
+
+
+
+
+
+
+
+<p><a href="/home/projetos" class="btn btn-primary">Voltar &raquo;</a></p>
