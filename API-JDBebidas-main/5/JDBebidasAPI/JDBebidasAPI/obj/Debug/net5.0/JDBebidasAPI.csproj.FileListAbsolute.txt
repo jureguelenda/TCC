@@ -1,0 +1,7 @@
+C:\Users\android\Downloads\JDBebidasAPI\JDBebidasAPI\obj\Debug\net5.0\JDBebidasAPI.csproj.AssemblyReference.cache
+C:\Users\android\Downloads\JDBebidasAPI\JDBebidasAPI\obj\Debug\net5.0\JDBebidasAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\android\Downloads\JDBebidasAPI\JDBebidasAPI\obj\Debug\net5.0\JDBebidasAPI.AssemblyInfoInputs.cache
+C:\Users\android\Downloads\JDBebidasAPI\JDBebidasAPI\obj\Debug\net5.0\JDBebidasAPI.AssemblyInfo.cs
+C:\Users\android\Downloads\JDBebidasAPI\JDBebidasAPI\obj\Debug\net5.0\JDBebidasAPI.csproj.CoreCompileInputs.cache
+C:\Users\android\Downloads\JDBebidasAPI\JDBebidasAPI\obj\Debug\net5.0\JDBebidasAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\android\Downloads\JDBebidasAPI\JDBebidasAPI\obj\Debug\net5.0\JDBebidasAPI.MvcApplicationPartsAssemblyInfo.cache
