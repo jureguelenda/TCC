@@ -1,0 +1,93 @@
+﻿/** {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-login {
+    width: 80vw;
+    height: 80vh;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+.tela-login {
+    width: 500px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.checkbox {
+    color: black;
+}
+.esqueceu-senha {
+    color: black;
+}
+
+
+.card-login {
+    width: 70%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #fada2c;
+    box-shadow: 0px 10px 40px black;
+}
+
+
+.caixa-texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+  .caixa-texto > input {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      font-size: 15pt;
+      outline: none;
+      box-shadow: 0px 10px 30px #d1b100;
+  }
+
+  .caixa-texto > label{
+      color:#161614;
+      margin-bottom:10px;
+  }
+
+
+.btn-login {
+    color: #ffffff;
+    width: 100%;
+    padding: 16px 0px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;*/
+    /*font-weight: 800;*/
+    /*letter-spacing: 3px;
+    box-shadow: 0px 10px 30px #d1b100;
+    background: #201b2c;
+
+    cursor: pointer;
+    font-weight: bold;
+}*/
+

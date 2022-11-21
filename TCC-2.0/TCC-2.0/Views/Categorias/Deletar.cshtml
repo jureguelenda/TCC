@@ -4,13 +4,17 @@
     ViewBag.Title = "Deletar";
 }
 
+
+<body class="fundo">
+
+    
 <h2>Deletando</h2>
 
-<div>
+<div class="letras">
     <form action="/Categorias/ConfirmeDelete?id=@Model.CATID" method="post">
         <div>
             <class ="form-group">
-                <label>Descrição</label>
+                <label class="letras">Descrição: </label>
                 <label>@Model.CATDESCRICAO</label>
         </div>
 
@@ -27,3 +31,25 @@
 
     </form>
 </div>
+
+</body>
+<style>
+
+    h2 {
+        color: white;
+    }
+
+    .letras {
+        color: white;
+        }
+
+
+    .fundo {
+    background-image: url("https://st.depositphotos.com/2069237/2231/i/450/depositphotos_22310611-stock-photo-blackboard-chalkboard-texture.jpg");
+      background-repeat: no-repeat;
+     
+     background-attachment: fixed;
+     background-size: 100% 100%;
+}    
+    
+</style>

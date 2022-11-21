@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TCC_2._0.Data;
 using TCC_2._0.Models;
@@ -6,6 +7,7 @@ using TCC_2._0.Models;
 
 namespace TCC_2._0.Controllers
 {
+    [Authorize]
     public class SaidaController : Controller
     {
 
@@ -18,19 +20,9 @@ namespace TCC_2._0.Controllers
 
         public ActionResult Index()
         {
-           /*  (new SAIDA
-            {
-                = User.Identity.Name,
-                detalhes = "Entrou na tela de Saida"
-            });
-
-            bd.SaveChanges();
-           */
-
-            // select * from produto
-            return View(bd.TIPO.ToList());
+            return View(bd.SAIDA.ToList());
         }
-        // GET: Criar
+
         public ActionResult Criar()
         {
             return View();
@@ -41,14 +33,13 @@ namespace TCC_2._0.Controllers
         }
 
         [HttpPost]
-        public ActionResult Criar(string descricao)
+        public ActionResult Criar( DateTime data)
         {
-            TIPO novotipo = new TIPO();
+            SAIDA novasaida = new SAIDA();
 
-            novotipo.TIPNOME = descricao;
+            novasaida.SAIDATA = data;
 
-
-            bd.TIPO.Add(novotipo);
+            bd.SAIDA.Add(novasaida);
             bd.SaveChanges();
 
             return RedirectToAction("Index");
@@ -59,18 +50,19 @@ namespace TCC_2._0.Controllers
         [HttpGet]
         public ActionResult Editar(int? id)
         {
-            TIPO tipolocalizar = bd.TIPO.ToList().Where(x => x.TIPID == id).First();
-            return View(tipolocalizar);
+            SAIDA Sailocalizar = bd.SAIDA.ToList().Where(x => x.SAIID == id).First();
+            return View(Sailocalizar);
         }
 
         [HttpPost]
-        public ActionResult Editar(int? id, string descricao)
+        public ActionResult Editar(int? id,DateTime data)
         {
-            TIPO tipoatualizar = bd.TIPO.ToList().Where(x => x.TIPID == id).First();
-            tipoatualizar.TIPNOME = descricao;
+            SAIDA Saiatualizar = bd.SAIDA.ToList().Where(x => x.SAIID == id).First();
+            
+            Saiatualizar.SAIDATA = data;
 
 
-            bd.Entry(tipoatualizar).State = EntityState.Modified;
+            bd.Entry(Saiatualizar).State = EntityState.Modified;
 
             bd.SaveChanges();
             return RedirectToAction("Index");
@@ -81,15 +73,15 @@ namespace TCC_2._0.Controllers
         [HttpGet]
         public ActionResult Deletar(int? id)
         {
-            TIPO tipoDeletar = bd.TIPO.ToList().Where(x => x.TIPID == id).First();
-            return View(tipoDeletar);
+            SAIDA saiDeletar = bd.SAIDA.ToList().Where(x => x.SAIID == id).First();
+            return View(saiDeletar);
         }
 
         [HttpPost]
         public ActionResult ConfirmeDelete(int? id)
         {
-            TIPO tipoDeletar = bd.TIPO.ToList().Where(x => x.TIPID == id).First();
-            bd.TIPO.Remove(tipoDeletar);
+            SAIDA saiDeletar = bd.SAIDA.ToList().Where(x => x.SAIID == id).First();
+            bd.SAIDA.Remove(saiDeletar);
             try
             {
                 bd.SaveChanges();
@@ -98,8 +90,6 @@ namespace TCC_2._0.Controllers
             {
                 return RedirectToAction("/Home/Erro");
             }
-
-
 
 
 

@@ -1,5 +1,59 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<TCC_2._0.Models.ITENSENTRADA>
+
 @{
+    ViewData["Title"] = "View";
 }
+
+<h1>View</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ENTRADA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PROTIPO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ITEQUANTIDADE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ITEPRECO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ITETOTAL)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ENTRADA.ENTID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PROTIPO.PTID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ITEQUANTIDADE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ITEPRECO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ITETOTAL)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ITEID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ITEID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ITEID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

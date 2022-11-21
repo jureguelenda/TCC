@@ -23,19 +23,24 @@ namespace TCC_2._0.Controllers
             return View();
         }
 
+       
         public IActionResult Projetos()
         {
 
-            if (Session["MyCurso"] != null)
-            {
+            
                 return View();
 
-            }
-            else
-            {
-                return RedirectToAction("Login", "Home");
-            }
+           
             
+        }
+
+        public IActionResult bemvindo()
+        {
+
+            
+                return View();
+
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
