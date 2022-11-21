@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zbAwS4xIjQ6X6chW4AjY9H9RtqIKCjFB0jibh9PP3aY=",
+  "Hash": "ffZyunpl4HARcKdXGq6L3vixYfNhFZPuf76c2Io8DMU=",
   "Source": "TCC-2.0",
   "BasePath": "_content/TCC-2.0",
   "Mode": "Default",
@@ -1139,12 +1139,12 @@
       "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
     },
     {
-      "Identity": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\css\\TelaLogin.css",
+      "Identity": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\css\\Tlogin.css",
       "SourceId": "TCC-2.0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\",
       "BasePath": "_content/TCC-2.0",
-      "RelativePath": "css/TelaLogin.css",
+      "RelativePath": "css/Tlogin.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1153,7 +1153,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\TelaLogin.css"
+      "OriginalItemSpec": "wwwroot\\css\\Tlogin.css"
     },
     {
       "Identity": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\favicon.ico",

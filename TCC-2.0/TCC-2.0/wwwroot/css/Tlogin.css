@@ -1,12 +1,18 @@
-﻿/** {
+﻿* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
-    
+    box-sizing: border-box;
+
 }
 
 body {
     font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    justify-items:center;
+    background-color:gray;
+
 }
 
 .main-login {
@@ -16,6 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     
 }
 
@@ -23,12 +30,12 @@ body {
 
 
 .tela-login {
-    width: 500px;
-    height: 50%;
+    width: 1000px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-direction:column;
 }
 .checkbox {
     color: black;
@@ -36,6 +43,16 @@ body {
 .esqueceu-senha {
     color: black;
 }
+
+
+/*.direita-login {
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+*/
 
 
 .card-login {
@@ -81,13 +98,13 @@ body {
     border: none;
     border-radius: 8px;
     outline: none;
-    text-transform: uppercase;*/
-    /*font-weight: 800;*/
-    /*letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
     box-shadow: 0px 10px 30px #d1b100;
     background: #201b2c;
 
     cursor: pointer;
     font-weight: bold;
-}*/
+}
 
