@@ -1,59 +1,61 @@
 ﻿@model IEnumerable<TCC_2._0.Models.ITENSENTRADA>
 
 @{
-    ViewData["Title"] = "View";
+    ViewBag.Title = "Index";
 }
 
-<h1>View</h1>
+<link href="~/css/CRUD2.css" rel="stylesheet"/>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ENTRADA)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PROTIPO)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ITEQUANTIDADE)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ITEPRECO)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ITETOTAL)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ENTRADA.ENTID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PROTIPO.PTID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ITEQUANTIDADE)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ITEPRECO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ITETOTAL)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ITEID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ITEID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ITEID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<body class="fundo">
+    <p><a class="btn btn-info" href="/ITENSENTRADA/Criar">Criar Itens na Entrada &raquo;</a></p>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Entrada</th>
+                <th scope="col">Produto Tipo</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Total</th>
+               
+            </tr>
+        </thead>    
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+              
+                    <td scope="row">@item.ITEID</td>
+                     <td><option value="@item.ENTID">@item.ENTRADA.ENTOBSERVACAO</option></td>
+                    <td><option value="@item.PTID">@item.PROTIPO.PRODUTO</option></td>
+                    <td>@item.ITEQUANTIDADE</td>
+                    <td>@item.ITEPRECO</td>
+                    <td>@item.ITETOTAL</td>
+
+                    <td>
+
+                        <a href="/entrada/editar?id=@item.ENTID"><button type="button" class="btn btn-warning">Editar</button></a>
+                        <a href="/entrada/deletar?id=@item.ENTID"><button type="button" class="btn btn-danger">Deletar</button></a>
+
+                    </td>
+                
+            }
+
+
+
+
+        </tbody>
+    </table>
+
+
+</body>
+
+
+
+
+
+
+
+
+<p><a href="/home/projetos" class="btn btn-primary">Voltar &raquo;</a></p>

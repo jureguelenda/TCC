@@ -219,36 +219,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9qZXRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensEntrada/Criar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNFbnRyYWRhXENyaWFyLmNzaHRtbA==
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ITENSENTRADA/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVRFTlNFTlRSQURBXENyaWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensEntrada/Deletar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNFbnRyYWRhXERlbGV0YXIuY3NodG1s
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ITENSENTRADA/Deletar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVRFTlNFTlRSQURBXERlbGV0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensEntrada/Editar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNFbnRyYWRhXEVkaXRhci5jc2h0bWw=
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ITENSENTRADA/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVRFTlNFTlRSQURBXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensEntrada/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNFbnRyYWRhXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensSaida/Criar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNTYWlkYVxDcmlhci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensSaida/Deletar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNTYWlkYVxEZWxldGFyLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensSaida/Editar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNTYWlkYVxFZGl0YXIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ItensSaida/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbnNTYWlkYVxJbmRleC5jc2h0bWw=
+[C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/ITENSENTRADA/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVRFTlNFTlRSQURBXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/android/Desktop/TCC/TCC-2.0/TCC-2.0/Views/Produto/Criar.cshtml]

@@ -20,6 +20,8 @@ namespace TCC_2._0.Controllers
         public ActionResult Index()
         {
             // select * from produto
+
+            ViewBag.Categoria = bd.CATEGORIA.ToList();
             return View(bd.PRODUTO.ToList());
         }
         // GET: Criar

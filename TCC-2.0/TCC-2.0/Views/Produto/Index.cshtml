@@ -5,10 +5,10 @@
     ViewBag.Title = "Index";
 }
 
-
+<link href="~/css/CRUD2.css" rel="stylesheet"/>
 
 <body class="fundo">
-    <p><a class="btn btn-primary" href="/Produto/Criar">Criar novo Produto &raquo;</a></p>
+    <p><a class="btn btn-info" href="/Produto/Criar">Criar novo Produto &raquo;</a></p>
 
     <table class="table">
         <thead class="thead-dark">
@@ -17,6 +17,7 @@
                 <th scope="col">Descrição</th>
                 <th scope="col">Categoria</th>
                 <th scope="col">Imagem </th>
+                <th scope="col">Opções</th>
             </tr>
         </thead>
         <tbody>
@@ -26,7 +27,7 @@
                 <tr>
                     <td scope="row">@item.PROID</td>
                     <td>@item.PRODESCRICAO</td>
-                    <td> @item.CATID</td>
+                    <td><option value="@item.CATID">@item.CATEGORIA.CATDESCRICAO</option></td>
                     <td>
                         @{
                             if (item.PROIMAGEM != null)
@@ -62,31 +63,6 @@
 
 
 </body>
-
-
-<style>
-
-    tr {
-        color: white;
-    }
-
-  
-
-
-    .fundo {
-    background-image: url("https://st.depositphotos.com/2069237/2231/i/450/depositphotos_22310611-stock-photo-blackboard-chalkboard-texture.jpg");
-      background-repeat: no-repeat;
-     
-     background-attachment: fixed;
-     background-size: 100% 100%;
-}    
-    
-</style>
-
-
-
-
-
 
 
 

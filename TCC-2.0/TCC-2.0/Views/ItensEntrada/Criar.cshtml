@@ -1,5 +1,71 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<TCC_2._0.Models.ITENSENTRADA>
+
 @{
+    ViewBag.Title = "Criar";
 }
+
+<h2>Criar</h2>
+
+<div>
+    <form action="/ITENSENTRADA/Criar" enctype="multipart/form-data" method="post">
+
+        
+         <div>
+            <label>Produto: </label>
+            <select id="entrada" name="entrada">
+
+                @foreach (var item in ViewBag.listaentra)
+                {
+                    <option value="@item.ENTID">@item.ENTORIGEM</option>
+                }
+
+            </select>
+
+        </div>
+
+        
+        <div>
+            <label>Pro Tipo: </label>
+            <select id="protipo" name="protipo">
+
+                @foreach (var item in ViewBag.listatip)
+                {
+                   <option value="@item.PTID">@item.PTID</option>
+                }
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+            <label for="qtd">Quantidade</label>
+            <input type="text" class="form-control"
+                   maxlength="100" id="qtd" name="qtd"
+                   required />
+        </div>
+
+        <div class="form-group">
+            <label for="preco">Preço</label>
+            <input type="text" class="form-control"
+                   maxlength="100" id="preco" name="preco"
+                   required />
+        </div>
+
+       
+       
+
+
+
+
+
+
+        <div>
+            <button type="submit" class="btn btn-success">Salvar</button>
+            <a href="/ITENSENTRADA/index" class="btn btn-primary">Voltar</a>
+
+        </div>
+
+
+
+    </form>
+</div>

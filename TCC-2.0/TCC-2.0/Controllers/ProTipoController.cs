@@ -20,6 +20,8 @@ namespace TCC_2._0.Controllers
 
         public ActionResult Index()
         {
+            ViewBag.tip = bd.TIPO.ToList();
+            ViewBag.desp = bd.PRODUTO.ToList();
             return View(bd.PROTIPO.ToList());
         }
 

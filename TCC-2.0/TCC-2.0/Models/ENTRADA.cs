@@ -17,11 +17,11 @@ namespace TCC_2._0.Models
 
         [Column("ENTORIGEM")]
         [Display(Name = "ENTORIGEM")]
-        public string ENTORIGEM { get; set; }
+        public string? ENTORIGEM { get; set; }
 
         [Column("ENTOBSERVACAO")]
         [Display(Name = "ENTOBSERVACAO")]
-        public string ENTOBSERVACAO { get; set; }
+        public string? ENTOBSERVACAO { get; set; }
 
     }
 }

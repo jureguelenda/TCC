@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ffZyunpl4HARcKdXGq6L3vixYfNhFZPuf76c2Io8DMU=",
+  "Hash": "NG2DMMKE1yKIzHqQk8AklpsnhxVyGW94b439A4jlZuw=",
   "Source": "TCC-2.0",
   "BasePath": "_content/TCC-2.0",
   "Mode": "Default",
@@ -1088,6 +1088,40 @@
       "OriginalItemSpec": "wwwroot\\css\\BemVindo.css"
     },
     {
+      "Identity": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\css\\Black.png",
+      "SourceId": "TCC-2.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\",
+      "BasePath": "_content/TCC-2.0",
+      "RelativePath": "css/Black.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Black.png"
+    },
+    {
+      "Identity": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\css\\CRUD2.css",
+      "SourceId": "TCC-2.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\",
+      "BasePath": "_content/TCC-2.0",
+      "RelativePath": "css/CRUD2.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\CRUD2.css"
+    },
+    {
       "Identity": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\css\\JD-Bebidas-Logo.jpg",
       "SourceId": "TCC-2.0",
       "SourceType": "Discovered",
@@ -1120,23 +1154,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\css\\StyleSheet.css",
-      "SourceId": "TCC-2.0",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\",
-      "BasePath": "_content/TCC-2.0",
-      "RelativePath": "css/StyleSheet.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
     },
     {
       "Identity": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\css\\Tlogin.css",
