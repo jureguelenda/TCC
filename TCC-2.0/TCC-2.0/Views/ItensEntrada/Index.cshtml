@@ -1,0 +1,61 @@
+﻿@model IEnumerable<TCC_2._0.Models.ITENSENTRADA>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<link href="~/css/CRUD2.css" rel="stylesheet"/>
+
+<body class="fundo">
+    <p><a class="btn btn-info" href="/ITENSENTRADA/Criar">Criar Itens na Entrada &raquo;</a></p>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Entrada</th>
+                <th scope="col">Produto Tipo</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Total</th>
+               
+            </tr>
+        </thead>    
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+              
+                    <td scope="row">@item.ITEID</td>
+                     <td><option value="@item.ENTID">@item.ENTRADA.ENTOBSERVACAO</option></td>
+                    <td><option value="@item.PTID">@item.PROTIPO.PRODUTO</option></td>
+                    <td>@item.ITEQUANTIDADE</td>
+                    <td>@item.ITEPRECO</td>
+                    <td>@item.ITETOTAL</td>
+
+                    <td>
+
+                        <a href="/entrada/editar?id=@item.ENTID"><button type="button" class="btn btn-warning">Editar</button></a>
+                        <a href="/entrada/deletar?id=@item.ENTID"><button type="button" class="btn btn-danger">Deletar</button></a>
+
+                    </td>
+                
+            }
+
+
+
+
+        </tbody>
+    </table>
+
+
+</body>
+
+
+
+
+
+
+
+
+<p><a href="/home/projetos" class="btn btn-primary">Voltar &raquo;</a></p>

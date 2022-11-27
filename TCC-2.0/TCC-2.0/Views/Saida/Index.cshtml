@@ -1,0 +1,63 @@
+﻿@model IEnumerable<TCC_2._0.Models.SAIDA>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<link href="~/css/CRUD2.css" rel="stylesheet"/>
+
+<body class="fundo">
+    <p><a class="btn btn-info" href="/Saida/Criar">Criar nova Saida &raquo;</a></p>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Data</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <td scope="row">@item.SAIID</td>
+                    <td> @item.SAIDATA</td>
+
+
+
+
+
+
+                    <td>
+
+                        <a href="/saida/editar?id=@item.SAIID"><button type="button" class="btn btn-warning">Editar</button></a>
+                        <a href="/saida/deletar?id=@item.SAIID"><button type="button" class="btn btn-danger">Deletar</button></a>
+
+                    </td>
+                </tr>
+            }
+
+
+
+
+        </tbody>
+    </table>
+
+
+</body>
+
+
+
+
+
+
+
+
+<p><a href="/home/projetos" class="btn btn-primary">Voltar &raquo;</a></p>
+
+
+

@@ -1,0 +1,77 @@
+﻿@model  TCC_2._0.Models.ITENSENTRADA
+
+
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h2>Editando</h2>
+
+<div>
+    <form action="/ITENSENTRADA/Editar?id=@Model.ITEID" method="post">
+        
+
+         <div>
+            <label>Entrada: </label>
+            <select id="entrada" name="entrada">
+
+                @foreach (var item in ViewBag.listaentrada)
+                {
+                  <td><option value="@item.ENTID">@item.ENTRADA.ENTOBSERVACAO</option></td>
+
+                }
+
+            </select>
+
+        </div>
+
+        
+        <div>
+            <label>Pro Tipo: </label>
+            <select id="protipo" name="protipo">
+
+                @foreach (var item in ViewBag.listaProduto)
+                {
+                   <td><option value="@item.PTID">@item.PROTIPO.PRODUTO</option></td>
+                }
+
+            </select>
+
+        </div>
+
+       
+
+        <div class="form-group">
+            <label for="qtd">Quantidade</label>
+            <input type="text" class="form-control"
+                   maxlength="100" id="qtd" name="qtd"
+                   value="@Model.ITEQUANTIDADE"
+                   required />
+        </div>
+
+        <div class="form-group">
+            <label for="preco">Preço</label>
+            <input type="text" class="form-control"
+                   maxlength="100" id="preco" name="preco"
+                   value="@Model.ITEPRECO"
+                   required />
+        </div>
+
+
+
+
+
+        <div>
+
+
+
+            <div>
+                <button type="submit" class="btn btn-success">Salvar</button>
+                <a href="/entrada/index" class="btn btn-primary">Voltar</a>
+
+            </div>
+
+
+        </div>
+    </form>
+</div>
