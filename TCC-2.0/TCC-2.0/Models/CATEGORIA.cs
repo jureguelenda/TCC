@@ -12,6 +12,6 @@ namespace TCC_2._0.Models
 
         [Column("CATDESCRICAO")]
         [Display(Name = "CATDESCRICAO")]
-        public string CATDESCRICAO { get; set; }
+        public string? CATDESCRICAO { get; set; }
     }
 }

@@ -16,7 +16,7 @@ namespace TCC_2._0.Models
         [ForeignKey("ENTRADA")]
         public int ENTID { get; set; }
 
-        public PROTIPO PROTIPO { get; set; }
+        public PROTIPO? PROTIPO { get; set; }
         [ForeignKey("PROTIPO")]
         public int PTID { get; set; }
 
@@ -26,10 +26,7 @@ namespace TCC_2._0.Models
 
         [Column("ITEPRECO")]
         [Display(Name = "ITEPRECO")]
-        public int ITEPRECO { get; set; }
+        public decimal ITEPRECO { get; set; }
 
-        [Column("ITETOTAL")]
-        [Display(Name = "ITETOTAL")]
-        public int ITETOTAL { get; set; }
     }
 }

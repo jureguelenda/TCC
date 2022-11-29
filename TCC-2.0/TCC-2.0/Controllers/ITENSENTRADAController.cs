@@ -31,13 +31,17 @@ namespace TCC_2._0.Controllers
 
             ViewBag.entra = bd.ENTRADA.ToList();
             ViewBag.tipo = bd.PROTIPO.ToList();
+            ViewBag.prod = bd.PRODUTO.ToList();
+            ViewBag.tip = bd.TIPO.ToList();
             return View(bd.ITENSENTRADA.ToList());
         }
 
         public ActionResult Criar()
         {
             ViewBag.listaentra = bd.ENTRADA.ToList();
-            ViewBag.listatip = bd.PROTIPO.ToList();
+            ViewBag.listapt = bd.PROTIPO.ToList();
+            ViewBag.listaprod = bd.PRODUTO.ToList();
+            ViewBag.listatip = bd.TIPO.ToList();
             return View();
         }
         public ActionResult Erro()
@@ -46,17 +50,15 @@ namespace TCC_2._0.Controllers
         }
 
         [HttpPost]
-        public ActionResult Criar(int protipo,int entrada, int qtd, int preco)
+        public ActionResult Criar(int protipo,int entrada, int qtd, decimal preco)
         {
-            int total;
             ITENSENTRADA novoitensentrada = new ITENSENTRADA();
 
             novoitensentrada.PTID = protipo;
             novoitensentrada.ENTID = entrada;
             novoitensentrada.ITEQUANTIDADE = qtd;
             novoitensentrada.ITEPRECO = preco;
-            total = novoitensentrada.ITEPRECO * novoitensentrada.ITEQUANTIDADE;
-            novoitensentrada.ITETOTAL = total;
+          
 
             
 
@@ -76,15 +78,14 @@ namespace TCC_2._0.Controllers
         }
 
         [HttpPost]
-        public ActionResult Editar(int? id, int protipo, int entrada, int qtd, int preco, int total)
+        public ActionResult Editar(int? id, int protipo, int entrada, int qtd, decimal preco)
         {
             ITENSENTRADA Entlocalizar = bd.ITENSENTRADA.ToList().Where(x => x.ITEID == id).First();
             Entlocalizar.PTID = protipo;
             Entlocalizar.ENTID = entrada;
             Entlocalizar.ITEQUANTIDADE = qtd;
             Entlocalizar.ITEPRECO = preco;
-            total = preco * qtd;
-            Entlocalizar.ITEPRECO = total;
+           
 
 
             bd.Entry(Entlocalizar).State = EntityState.Modified;

@@ -26,8 +26,6 @@ namespace TCC_2._0.Models
         [Display(Name = "ITSPRECO")]
         public int ITSPRECO { get; set; }
 
-        [Column("ITSTOTAL")]
-        [Display(Name = "ITSTOTAL")]
-        public int ITSTOTAL { get; set; }
+   
     }
 }

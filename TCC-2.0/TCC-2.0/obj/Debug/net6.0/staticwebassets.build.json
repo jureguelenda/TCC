@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NG2DMMKE1yKIzHqQk8AklpsnhxVyGW94b439A4jlZuw=",
+  "Hash": "EY3EyneVbR1vDp3sArWlPGU1lHFX0e6w9IwecjksoJg=",
   "Source": "TCC-2.0",
   "BasePath": "_content/TCC-2.0",
   "Mode": "Default",
@@ -1188,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\js\\menu.js",
+      "SourceId": "TCC-2.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\",
+      "BasePath": "_content/TCC-2.0",
+      "RelativePath": "js/menu.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\menu.js"
     },
     {
       "Identity": "C:\\Users\\android\\Desktop\\TCC\\TCC-2.0\\TCC-2.0\\wwwroot\\js\\site.js",

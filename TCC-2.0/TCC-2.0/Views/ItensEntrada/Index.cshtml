@@ -17,7 +17,7 @@
                 <th scope="col">Produto Tipo</th>
                 <th scope="col">Quantidade</th>
                 <th scope="col">Preço</th>
-                <th scope="col">Total</th>
+             
                
             </tr>
         </thead>    
@@ -25,20 +25,22 @@
             @foreach (var item in Model)
             {
 
-              
-                    <td scope="row">@item.ITEID</td>
-                     <td><option value="@item.ENTID">@item.ENTRADA.ENTOBSERVACAO</option></td>
-                    <td><option value="@item.PTID">@item.PROTIPO.PRODUTO</option></td>
-                    <td>@item.ITEQUANTIDADE</td>
-                    <td>@item.ITEPRECO</td>
-                    <td>@item.ITETOTAL</td>
+                    <tr>
+                        <td scope="row">@item.ITEID</td>
+                        <td>@item.ENTRADA.ENTOBSERVACAO</td>
+                        <td>@item.PROTIPO.PRODUTO.PRODESCRICAO @item.PROTIPO.TIPO.TIPNOME</td>
+                        <td>@item.ITEQUANTIDADE</td>
+                        <td>@item.ITEPRECO</td>
+                   
 
-                    <td>
+                        <td>
 
-                        <a href="/entrada/editar?id=@item.ENTID"><button type="button" class="btn btn-warning">Editar</button></a>
-                        <a href="/entrada/deletar?id=@item.ENTID"><button type="button" class="btn btn-danger">Deletar</button></a>
+                            <a href="/ITENSENTRADA/editar?id=@item.ITEID"><button type="button" class="btn btn-warning">Editar</button></a>
+                            <a href="/ITENSENTRADA/deletar?id=@item.ITEID"><button type="button" class="btn btn-danger">Deletar</button></a>
 
-                    </td>
+                        </td>
+
+                    </tr>
                 
             }
 

@@ -25,6 +25,14 @@ namespace TCC_2._0.Controllers
             return View(bd.PROTIPO.ToList());
         }
 
+        public ActionResult Alerta()
+        {
+            ViewBag.tip = bd.TIPO.ToList();
+            ViewBag.desp = bd.PRODUTO.ToList();
+            return View(bd.PROTIPO.ToList());
+        }
+
+
         [HttpGet]
         public ActionResult Criar()
         {
@@ -33,6 +41,8 @@ namespace TCC_2._0.Controllers
             return View();
         }
         
+
+
         [HttpPost]
         public async Task<ActionResult> CriarAsync(int produto, int tipo, string maximo, string minimo, string estoque, IFormFile imagem)
         {
@@ -115,6 +125,30 @@ namespace TCC_2._0.Controllers
 
 
             return RedirectToAction("Index");
+        }
+
+
+        [HttpGet]
+        public ActionResult Atualizar(int? id)
+        {
+            ViewBag.listaTip = bd.TIPO.ToList();
+            ViewBag.listaProdut = bd.PRODUTO.ToList();
+            PROTIPO ptlocalizar = bd.PROTIPO.ToList().Where(x => x.PTID == id).First();
+            return View(ptlocalizar);
+        }
+
+        [HttpPost]
+        public ActionResult Atualizar(int? id,string estoque)
+        {
+            PROTIPO pteatualizar = bd.PROTIPO.ToList().Where(x => x.PTID == id).First();
+            pteatualizar.PTESTOQUE = Convert.ToInt32(estoque);
+
+
+            bd.Entry(pteatualizar).State = EntityState.Modified;
+
+            bd.SaveChanges();
+            return RedirectToAction("Index");
+
         }
     }
 }
